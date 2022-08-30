@@ -1,0 +1,20 @@
+
+<div class="table-responsive"> 
+    <table class="table table-bordered" id="theme">
+        <thead class="thead text-center" >
+            <tr>
+                <th>Nombre </th>
+                <th>Apellido</th>
+                <th>avatar</th>
+            </tr>
+        </thead>
+        <tbody class="text-center">
+            <tr *ngFor="let el of usuarios">
+                <td>{{el.first_name}}</td>
+                <td>{{el.last_name}}</td>
+                <td><img [src]="el.avatar" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

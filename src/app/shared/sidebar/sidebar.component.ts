@@ -13,7 +13,7 @@ export class SidebarComponent implements OnInit {
   constructor(
               private sidService: SidebarServiceService
              ) { 
-              this.menuItems = sidService.menu;
+              this.menuItems = this.sidService.menu;
               console.log(this.menuItems);
               
              }
